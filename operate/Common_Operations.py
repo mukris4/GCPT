@@ -4,6 +4,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 class common_browser:
+    def __init__(self,driver):
+        self.driver=driver
     def login(self, username, password):
         self.driver.find_element_by_id("username").clear()
         self.driver.find_element_by_id("username").send_keys(username)
@@ -14,6 +16,7 @@ class common_browser:
         # password.clear()
         password1.send_keys(password)
         self.driver.find_element_by_id("ImageBtLogin").click()
+
 
         #js去掉readonly属性
         # js='document.getElementById("conCon_txtBillNo").removeAttribute("readonly");'

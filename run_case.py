@@ -20,5 +20,5 @@ if __name__ == '__main__':
     test_suite = unittest .defaultTestLoader.discover(test_case_path, pattern=pattern)
     result = BeautifulReport(test_suite)
     result.report(filename=filename,description=description,report_dir=log_path)
-    report='H:/GCPT/report/'+filename+'.html'
-    sendemail(report)
+    # report='H:/GCPT/report/'+filename+'.html'
+    # sendemail(report)
