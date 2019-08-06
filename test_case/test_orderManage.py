@@ -12,7 +12,7 @@ from BeautifulReport import BeautifulReport
 class OrderM(unittest.TestCase):
     def save_img(self, img_name):
         """
-            传入一个img_name, 并存储到默认的文件路径下
+        传入一个img_name, 并存储到默认的文件路径下
         :param img_name:
         :return:
         """
